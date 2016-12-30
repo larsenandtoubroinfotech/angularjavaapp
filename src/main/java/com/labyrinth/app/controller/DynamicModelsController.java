@@ -64,8 +64,8 @@ public class DynamicModelsController {
 
 			// remove internal models
 			dynamicModelList.remove("DynamicModels");
-			// demo
-			//dynamicModelList.remove("Department");
+			// DevOps demo
+			dynamicModelList.remove("Department");
 		}
 
 		// List containing model names

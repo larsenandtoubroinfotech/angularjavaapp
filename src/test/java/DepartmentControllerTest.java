@@ -30,6 +30,9 @@ import test.TestApplicationContextConfig;
 @ContextConfiguration(classes = TestApplicationContextConfig.class)
 @WebAppConfiguration
 public class DepartmentControllerTest {
+	
+	//demo
+	
 	@Autowired
 	private WebApplicationContext wac;
 	

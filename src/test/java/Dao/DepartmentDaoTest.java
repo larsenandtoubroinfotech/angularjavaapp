@@ -27,6 +27,8 @@ import test.TestApplicationContextConfig;
 @WebAppConfiguration
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class DepartmentDaoTest {  
+
+//demo
   
  @Autowired  
  private DepartmentDAO DepartmentDAO;  

@@ -14,6 +14,8 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 @JsonNaming(PropertyNamingStrategy.PascalCaseStrategy.class)
 public class Department {
 	
+	//demo
+	
 	@Id
 	@GeneratedValue
 	@Column(name="department_ID")

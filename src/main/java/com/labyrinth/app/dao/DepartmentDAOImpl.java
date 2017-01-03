@@ -15,6 +15,8 @@ import main.java.com.labyrinth.app.model.Department;
 @Repository
 public class DepartmentDAOImpl implements DepartmentDAO {
 
+	//demo
+
 	@Autowired
 	private SessionFactory sessionFactory;
 

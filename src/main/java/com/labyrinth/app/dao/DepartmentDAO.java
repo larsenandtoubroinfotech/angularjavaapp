@@ -6,6 +6,8 @@ import main.java.com.labyrinth.app.model.Department;
 
 public interface DepartmentDAO {
 
+	//demo
+
 	public List<Department> list();
 
 	public Department get(Integer departmentID);

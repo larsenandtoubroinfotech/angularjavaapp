@@ -30,6 +30,8 @@ public class DepartmentsController {
 	List<Department> departmentList = new ArrayList<>();
 	ObjectMapper objectMapper = new ObjectMapper();
 
+	//demo
+	
 	// getAll
 	@RequestMapping(value = "/api/Department", method = RequestMethod.GET)
 	public List<Department> getAllDepartments() {

@@ -71,7 +71,7 @@ public class TestApplicationContextConfig extends WebMvcConfigurerAdapter {
 	public DataSource getDataSource() {
 
 		BasicDataSource dataSource = new BasicDataSource();
-		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		dataSource.setDriverClassName("org.hsqldb.jdbcDriver");
 		dataSource.setUrl(env.getProperty("testdburl"));
 		dataSource.setUsername(env.getProperty("testdbusername"));
 		dataSource.setPassword(env.getProperty("testdbpassword"));
@@ -87,7 +87,7 @@ public class TestApplicationContextConfig extends WebMvcConfigurerAdapter {
 		LocalSessionFactoryBuilder sessionBuilder = new LocalSessionFactoryBuilder(dataSource);
 
 		sessionBuilder.addAnnotatedClasses(Student.class).scanPackages("main.java.com.labyrinth.app.model")
-				.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect")
+				.setProperty("hibernate.dialect", "org.hibernate.dialect.HSQLDialect")
 				.setProperty("hibernate.show_sql", "true")
 				.setProperty("hibernate.hbm2ddl.auto", "create-drop");
 		//sessionBuilder.setProperty("hibernate.hbm2ddl.auto", "create");
